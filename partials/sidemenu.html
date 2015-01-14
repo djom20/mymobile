@@ -1,0 +1,33 @@
+<div class="sidemenu" ng-controller="MenuCtrl">
+    <header>
+        <h4>Menu</h4>
+    </header>
+    <article>
+        <ul class="list">
+            <li>
+                <a ng-click="linkTo('/inbox')" class="dont-list">
+                    <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+                    <h4 class="text-left">Inbox</h4>
+                </a>
+            </li>
+            <li>
+                <a ng-click="linkTo('/forms')" class="dont-list">
+                    <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+                    <h4 class="text-left">Forms</h4>
+                </a>
+            </li>
+            <li>
+                <a ng-click="linkTo('/form')" class="dont-list">
+                    <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+                    <h4 class="text-left">Form</h4>
+                </a>
+            </li>
+            <li>
+                <a ng-click="linkTo('/sent')" class="dont-list">
+                    <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+                    <h4 class="text-left">Sent</h4>
+                </a>
+            </li>
+        </ul>
+    </article>
+</div>

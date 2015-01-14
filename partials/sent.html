@@ -1,0 +1,66 @@
+<section class="page">
+	<header ng-controller="MenuCtrl">
+		<button ng-click="toggleMenu()" type="button" class="btn btn-default pull-left main-menu" aria-label="Justify">
+			<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+		</button>
+		<h1>Sent</h1>
+	</header>
+	<article>
+		<div class="table-responsive fillForm">
+			<div class="row">
+		    	<div class="col-md-6">
+		    		<div class="text-left">
+				  		<div class="dropdown">
+  							<button type="submit" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  				<i class="glyphicon glyphicon-cog"></i>
+				  			</button>
+  							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat"><i class="glyphicon glyphicon-share"></i> Share</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat"><i class="glyphicon glyphicon-trash"></i> Delete</a></li>
+              				</ul>
+						</div>
+				  	</div>
+		    	</div>
+			  	<div class="col-md-6">
+			  		<div class="text-right">
+			  			<button type="submit" class="btn btn-default">
+			  				<i class="glyphicon glyphicon-plus"></i>
+			  			</button>
+			  		</div>
+			  	</div>
+		    </div>
+		    <table class="table table-condensed">
+		      	<thead>
+		        	<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+		        	</tr>
+		      	</thead>
+		      	<tbody>
+		        	<tr>
+				<th scope="row">1</th>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+		        	</tr>
+		        	<tr>
+				<th scope="row">2</th>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+		        	</tr>
+		        	<tr>
+				<th scope="row">3</th>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+		        	</tr>
+		      	</tbody>
+		    </table>
+		</div>
+	</article>
+	<footer>
+		<p>by Soluntech. Copyrigth &copy; 2015.</p>
+	</footer>
+</section>

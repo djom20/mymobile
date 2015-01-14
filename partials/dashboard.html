@@ -1,0 +1,28 @@
+<section class="page">
+	<header ng-controller="MenuCtrl">
+		<button ng-click="toggleMenu()" type="button" class="btn btn-default pull-left main-menu" aria-label="Justify">
+			<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+		</button>
+		<h1>Inbox</h1>
+	</header>
+	<article>
+		<form class="navbar-form" role="search">
+		    <label class="item item-input search">
+          		<i class="glyphicon glyphicon-search"></i>
+          		<input ng-model="seaching" class="search" type="text" placeholder="Search">
+        	</label>
+		</form>
+		<ul class="list">
+			<li ng-repeat="item in list | filter: seaching">
+				<a href="">
+					<i class="glyphicon glyphicon-star"></i>
+					<h4>{{ item.name }}</h4>
+      				<p>Nine Inch Nails</p>
+				</a>
+			</li>
+		</ul>
+	</article>
+	<footer>
+		<p>by Soluntech. Copyrith &copy; 2015.</p>
+	</footer>
+</section>
