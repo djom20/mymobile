@@ -13,6 +13,9 @@ body {
   background-color: #468cc8;
   overflow-x: hidden;
 }
+a{
+  cursor: pointer;
+}
 span.navy {
   color: #1ab394;
 }
@@ -43,6 +46,10 @@ h1 {
   height: 1px;
   margin: 60px auto 0;
   border-bottom: 2px solid #1ab394;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -941,8 +948,9 @@ ul.list li > a h4, p {
 
 .navbar-form {
   margin-bottom: 0;
-  margin-right: -2px;
+  margin-right: -1px;
   padding: 0;
+  margin-left: 1px;
 }
 
 .navbar-form input.search {
@@ -971,12 +979,12 @@ input.search:focus, input.search:hover{
 label.search {
   align-items: center;
   background-color: #fff;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-color: #ddd;
   border-style: solid;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-width: 1px;
   color: #444;
   display: block;

@@ -12,14 +12,12 @@
           		<input ng-model="seaching" class="search" type="text" placeholder="Search">
         	</label>
 		</form>
-		<ul class="list">
-			<li ng-repeat="item in list | filter: seaching">
-				<a href="">
-					<i class="glyphicon glyphicon-star"></i>
-					<h4>{{ item.name }}</h4>
-      				<p>Nine Inch Nails</p>
-				</a>
-			</li>
+		<ul class="list-group">
+			<a class="list-group-item" ng-repeat="item in list | filter: seaching">
+				<span class="badge">14</span>
+				<h4 class="list-group-item-header">{{ item.name }}</h4>
+  				<p class="list-group-item-text">Nine Inch Nails</p>
+			</a>
 		</ul>
 	</article>
 	<footer>

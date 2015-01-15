@@ -10,7 +10,7 @@ App.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
             controller: 'IndexCtrl'
         }).
         when('/inbox', {
-            templateUrl: 'partials/dashboard.html',
+            templateUrl: 'partials/inbox.html',
             controller: 'DashboardCtrl'
         })
         .when('/forms', {
